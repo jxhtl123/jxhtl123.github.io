@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="系统 Win7 64位工具 node.js、Git   Git Bash 官网下载  配置 用户名 xxx  $ git config – global user.name “xxx” 邮箱 xxx@xxx.com  $ git config – global user.email “xxx@xxx.com“  检查123$ git config user.name$ git config use">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-30T14:10:13.295Z">
+<meta property="og:updated_time" content="2019-10-30T14:19:46.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo个人博客搭建">
 <meta name="twitter:description" content="系统 Win7 64位工具 node.js、Git   Git Bash 官网下载  配置 用户名 xxx  $ git config – global user.name “xxx” 邮箱 xxx@xxx.com  $ git config – global user.email “xxx@xxx.com“  检查123$ git config user.name$ git config use">
@@ -233,27 +233,20 @@ $ clear ----- *清理bash*</code></pre><h3 id="hexo-生成博客"><a href="#hexo
 <br>
 
 <h3 id="将hexo部署在GitHub上公开使用"><a href="#将hexo部署在GitHub上公开使用" class="headerlink" title="将hexo部署在GitHub上公开使用"></a>将<strong>hexo</strong>部署在<strong>GitHub</strong>上公开使用</h3><ul>
-<li><p>登录github</p>
-</li>
-<li><p>New repository</p>
-</li>
-<li><p>Repository name必须符合特定的命名要求。比如：<strong>Owner：*</strong>xxx* 那么 <strong>Repository name：*</strong>xxx.github.io*（必须）</p>
-</li>
-<li><p>Desciption（描述）</p>
-</li>
-<li><p>Creat repository（生成一个空仓库）</p>
-</li>
-<li><p>地址则为<strong>Quick setup</strong>下的<strong>HTTPS</strong>后的地址</p>
-</li>
-<li><p>在<strong>blog</strong>文件夹下<code>$ cnpm install --save hexo-deployer-git</code>安装<strong>deployer-git</strong>插件</p>
-</li>
-<li><p><code>$ ls</code>看到有<code>_config.yml</code>后用<code>$ vim _config.yml</code>打开，也可以用<strong>记事本</strong>或者<strong>vscode</strong>等工具打开进行修改</p>
+<li>登录github</li>
+<li>New repository</li>
+<li>Repository name必须符合特定的命名要求。比如：<strong>Owner：*</strong>xxx* 那么 <strong>Repository name：*</strong>xxx.github.io*（必须）</li>
+<li>Desciption（描述）</li>
+<li>Creat repository（生成一个空仓库）</li>
+<li>地址则为<strong>Quick setup</strong>下的<strong>HTTPS</strong>后的地址</li>
+<li>在<strong>blog</strong>文件夹下<code>$ cnpm install --save hexo-deployer-git</code>安装<strong>deployer-git</strong>插件</li>
+<li><code>$ ls</code>看到有<code>_config.yml</code>后用<code>$ vim _config.yml</code>打开，也可以用<strong>记事本</strong>或者<strong>vscode</strong>等工具打开进行修改</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxx/xxx.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>$ hexo d</code> —– 部署到远端</p>
-</li>
-<li><p>输入<code>git</code>帐号密码之后就可从远端登录博客了  </p>
-</li>
+
+<ul>
+<li><code>$ hexo d</code> —– 部署到远端</li>
+<li>输入<code>git</code>帐号密码之后就可从<code>xxx.github.io</code>网址登录博客了</li>
 </ul>
 <h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
 <li>一个免费的主题<code>github.com/litten/hexo-theme-yilia</code>，浏览器进入浏览</li>
